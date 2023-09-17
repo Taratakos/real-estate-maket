@@ -715,6 +715,8 @@ body {
 .featured__images {
 }
 .featured__content {
+  display: flex;
+  flex-direction: column;
 }
 
 .images-featured {
@@ -743,8 +745,10 @@ body {
 }
 
 .content-featured {
+  align-self: end;
 }
 .content-featured__body {
+  flex: 1 1 auto;
   max-width: 412px;
   padding-top: 40px;
 }
@@ -765,15 +769,15 @@ body {
   margin-bottom: 55px;
 }
 .content-featured__link {
+  background-color: #f85a47;
+  color: #fff;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
   padding: 16px 35px;
   border-radius: 5px;
-  width: 100%;
+  max-width: 412px;
   display: block;
   transition: background-color 0.3s ease 0s;
-  background-color: #f85a47;
   box-shadow: 0px 1.85185px 3.14815px 0px rgba(248, 90, 71, 0.02),
     0px 8.14815px 6.51852px 0px rgba(248, 90, 71, 0.03),
     0px 20px 13px 0px rgba(248, 90, 71, 0.04),
